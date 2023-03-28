@@ -1,0 +1,59 @@
+@use './vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: vars.$color-claro;
+    font-family: vars.$fuente-texto;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: vars.$color-letra;
+}
+
+button {
+    width: fit-content;
+    align-self: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: vars.$color-letra;
+    background-color: vars.$color-oscuro;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid vars.$color-letra;
+}
+
+h1 {
+    font-family: vars.$fuente-titulo;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: vars.$fuente-titulo;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+}
+
+h3 {
+    font-family: vars.$fuente-titulo;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}

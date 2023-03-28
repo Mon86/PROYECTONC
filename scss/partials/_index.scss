@@ -1,0 +1,140 @@
+@use './vars';
+
+.index {
+    section {
+        padding: 2rem;
+    }
+    p {
+        text-indent: 2rem;
+        text-align: justify;
+    }
+}
+
+.index__quienesSomos {
+    width: 100%;
+    background-color: vars.$color-secundario;
+}
+
+// .carousel-item {
+//     padding: 0;
+// }
+
+.index__card {
+    margin: 1rem;
+    height: 50rem;
+    width: 26.5rem;
+    background-color: vars.$color-principal;
+    border: 1px solid vars.$color-secundario;
+    border-radius: 0.25rem;
+
+    &__top {
+        height: 30rem;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 100%;
+            align-self: center;
+        }
+    }
+
+    &__body {
+        height: 20rem;
+        font-size: 1.5rem;
+        position: relative;
+        
+        &__detalles {
+            margin-top: 1rem;
+            border-top: 1px solid vars.$color-secundario;
+            height: fit-content;
+            padding: 0 1rem 0 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        &__info {
+            border-top: 1px solid vars.$color-secundario;
+            text-align: right;
+            height: 2.5rem;
+            width: 100%;
+            position: absolute;
+            bottom: 1.5rem;
+            right: 0;
+
+            a {
+                padding: 1rem;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.carousel__boton {
+    background-color: vars.$color-oscuro;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.index__servicios__radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: vars.$color-principal;
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.index__clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__testimonio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        background-color: vars.$color-principal;
+    
+        &__contenedor {
+            width: 10rem;
+            height: 7rem;
+            margin: 1rem;
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            background-color: vars.$color-principal;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            font-size: 2rem;
+        }
+    }
+}
