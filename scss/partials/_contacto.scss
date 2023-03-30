@@ -45,9 +45,17 @@
     background-color: vars.$color-secundario;
     padding: 1rem;
     margin: 1rem 0 1rem 0;
+    
+    h2 {
+        display: none;
+    }
 
     &__telefono {
         margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
         img {
             width: 4rem;
@@ -70,6 +78,7 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            padding: 0;
         }
     }
 
@@ -77,5 +86,9 @@
         margin: 1rem;
         width: auto;
         overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }

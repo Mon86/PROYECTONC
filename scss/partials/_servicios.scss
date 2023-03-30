@@ -30,14 +30,41 @@
         &:focus {
             background-color: vars.$color-principal;
             border: none;
+            color: vars.$color-letra;
         }
 
         &:active {
             background-color: vars.$color-principal;
             border: none;
+            color: vars.$color-letra;
+        }
+
+        &:visited {
+            background-color: vars.$color-principal;
+            border: none;
+            color: vars.$color-letra;
+        }
+
+        &:link {
+            background-color: vars.$color-principal;
+            border: none;
+            color: vars.$color-letra;
+        }
+
+        &:hover {
+            background-color: vars.$color-principal;
+            border: none;
+            color: vars.$color-letra;
         }
     }
 }
+
+.accordion-button:not(.collapsed) {
+    background-color: vars.$color-principal;
+    border: none;
+    color: vars.$color-letra;
+}
+
 
 .accordion-body {
     display: flex;

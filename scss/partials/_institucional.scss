@@ -13,6 +13,10 @@
         background-color: vars.$color-principal;
         padding: 1rem;
 
+        h3 {
+            font-size: 2.5rem;
+        }
+
         &__container {
             margin: 1rem;
             display: flex;
@@ -61,18 +65,22 @@
 }
 
 .staff__card {
-    height: 30rem;
+    height: 33rem;
     width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin: 1rem;
 
     &__top {
         height: 20rem;
         width: 20rem;
         border-radius: 50%;
         overflow: hidden;
+        position: absolute;
+        top: 0;
         
         img {
             width: 100%;
@@ -80,6 +88,8 @@
     }
 
     &__bot {
+        position: absolute;
+        top: 21rem;
         p {
             text-align: center;
         }

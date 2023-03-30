@@ -151,9 +151,9 @@ h3 {
 }
 
 .index__card {
-  margin: 1rem;
+  margin: auto;
   height: 50rem;
-  width: 26.5rem;
+  width: 25rem;
   background-color: #d9d9d9;
   border: 1px solid #7c7a7a;
   border-radius: 0.25rem;
@@ -199,6 +199,17 @@ h3 {
   padding: 1rem;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.index__servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel {
+  width: 30rem;
 }
 
 .carousel__boton {
@@ -269,6 +280,9 @@ h3 {
   background-color: #d9d9d9;
   padding: 1rem;
 }
+.institucional__alianzas h3 {
+  font-size: 2.5rem;
+}
 .institucional__alianzas__container {
   margin: 1rem;
   display: flex;
@@ -308,21 +322,29 @@ h3 {
 }
 
 .staff__card {
-  height: 30rem;
+  height: 33rem;
   width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin: 1rem;
 }
 .staff__card__top {
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
   overflow: hidden;
+  position: absolute;
+  top: 0;
 }
 .staff__card__top img {
   width: 100%;
+}
+.staff__card__bot {
+  position: absolute;
+  top: 21rem;
 }
 .staff__card__bot p {
   text-align: center;
@@ -358,10 +380,33 @@ h3 {
 .accordion-header button:focus {
   background-color: #d9d9d9;
   border: none;
+  color: #000000;
 }
 .accordion-header button:active {
   background-color: #d9d9d9;
   border: none;
+  color: #000000;
+}
+.accordion-header button:visited {
+  background-color: #d9d9d9;
+  border: none;
+  color: #000000;
+}
+.accordion-header button:link {
+  background-color: #d9d9d9;
+  border: none;
+  color: #000000;
+}
+.accordion-header button:hover {
+  background-color: #d9d9d9;
+  border: none;
+  color: #000000;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d9d9d9;
+  border: none;
+  color: #000000;
 }
 
 .accordion-body {
@@ -416,8 +461,15 @@ h3 {
   padding: 1rem;
   margin: 1rem 0 1rem 0;
 }
+.contacto__direccion h2 {
+  display: none;
+}
 .contacto__direccion__telefono {
   margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .contacto__direccion__telefono img {
   width: 4rem;
@@ -437,11 +489,147 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 .contacto__direccion__mapa {
   margin: 1rem;
   width: auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyectos section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .index__clientes__testimonio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .institucional {
+    padding: 0;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1.5fr;
+    grid-template-areas: "texto1 alianzas" "texto2 alianzas " "video . " "staff staff";
+  }
+  .institucional section {
+    padding: 0 1rem 0 1rem;
+  }
+  .texto1 {
+    grid-area: texto1;
+  }
+  .texto2 {
+    grid-area: texto2;
+  }
+  .institucional__alianzas {
+    grid-area: alianzas;
+  }
+  .institucional__alianzas__container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    margin: 0;
+  }
+  .institucional__alianzas__container__card {
+    height: 15rem;
+    width: 15rem;
+  }
+  .institucional__staff {
+    grid-area: staff;
+  }
+  .institucional__video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: video;
+  }
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .contacto__formulario {
+    width: 45%;
+    object-fit: cover;
+  }
+  .contacto__direccion {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-areas: "titulo" "redes" "mapa" "telefono";
+  }
+  .contacto__direccion h2 {
+    display: block;
+    grid-area: titulo;
+  }
+  .contacto__direccion__telefono {
+    grid-area: telefono;
+  }
+  .contacto__direccion__redes {
+    grid-area: redes;
+  }
+  .contacto__direccion__mapa {
+    grid-area: mapa;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "direccion comunidad" "copyright copyright";
+  }
+  .footer__direccion {
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: direccion;
+  }
+  .footer__comunidad {
+    grid-area: comunidad;
+  }
+  .footer__copyright {
+    grid-area: copyright;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar__logo {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 3rem;
+  }
+  .navbar-nav {
+    position: absolute;
+    right: 0;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .index__clientes__testimonio__contenedor {
+    width: 14rem;
+    height: 10rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "direccion comunidad copyright";
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

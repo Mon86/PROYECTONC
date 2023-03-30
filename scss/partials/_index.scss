@@ -16,9 +16,9 @@
 }
 
 .index__card {
-    margin: 1rem;
+    margin: auto;
     height: 50rem;
-    width: 26.5rem;
+    width: 25rem;
     background-color: vars.$color-principal;
     border: 1px solid vars.$color-secundario;
     border-radius: 0.25rem;
@@ -71,6 +71,17 @@
             }
         }
     }
+}
+
+.index__servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carousel {
+    width: 30rem;
 }
 
 .carousel__boton {

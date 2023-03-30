@@ -1,0 +1,132 @@
+@media screen and (min-width: 768px) {
+    .index__clientes__testimonio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .institucional {
+        padding: 0;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 1.5fr;
+        grid-template-areas: 
+        "texto1 alianzas"
+        "texto2 alianzas "
+        "video . "
+        "staff staff"
+        ;
+
+        section {
+            padding: 0 1rem 0 1rem;
+        }
+    }
+
+    .texto1 {
+        grid-area: texto1;
+    }
+
+    .texto2 {
+        grid-area: texto2;
+    }
+
+    .institucional__alianzas {
+        grid-area: alianzas;
+
+        &__container {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 90%;
+            margin: 0;
+
+            &__card {
+                height: 15rem;
+                width: 15rem;
+            }
+        }
+    }
+
+    .institucional__staff {
+        grid-area: staff;
+    }
+
+    .institucional__video {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        grid-area: video;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+
+        &__formulario {
+            width: 45%;
+            object-fit: cover; 
+        }
+
+        &__direccion {
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 3fr 1fr;
+            grid-template-areas:
+            "titulo"
+            "redes"
+            "mapa"
+            "telefono"
+            ;
+
+
+            h2 {
+                display: block;
+                grid-area: titulo;
+            }
+
+            &__telefono {
+                grid-area: telefono;
+            }
+
+            &__redes {
+                grid-area: redes;
+            }
+
+            &__mapa {
+                grid-area: mapa;
+
+            }
+        }
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+        "direccion comunidad"
+        "copyright copyright"
+        ;
+
+
+        &__direccion {
+        flex-direction: row;
+        justify-content: space-around;
+        grid-area: direccion;
+        }
+
+        &__comunidad {
+            grid-area: comunidad;
+        }
+
+        &__copyright {
+            grid-area: copyright;
+            align-self: center;
+        }
+    }
+}
