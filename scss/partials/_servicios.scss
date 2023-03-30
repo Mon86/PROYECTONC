@@ -1,0 +1,51 @@
+@use './vars';
+
+.servicios__texto {
+    padding: 2rem;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.servicios__acordeon {
+    background-color: vars.$color-principal;
+    padding: 2rem 0 2rem 0;
+    h2 {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid vars.$color-letra;
+    }
+}
+
+.accordion-item {
+    background-color: vars.$color-principal;
+}
+
+.accordion-header {
+    background-color: vars.$color-principal;
+
+    button {
+        background-color: vars.$color-principal;
+        font-size: 2rem;
+        width: 90%;
+
+        &:focus {
+            background-color: vars.$color-principal;
+            border: none;
+        }
+
+        &:active {
+            background-color: vars.$color-principal;
+            border: none;
+        }
+    }
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    a {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,81 @@
+@use './vars';
+
+.contacto__formulario {
+    background-color: vars.$color-secundario;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            margin: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid vars.$color-oscuro;
+            background-color: vars.$color-principal;
+            color: vars.$color-letra;
+        }
+
+        select {
+            margin: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid vars.$color-oscuro;
+            background-color: vars.$color-principal;
+            color: vars.$color-letra;
+        }
+
+        textarea {
+            margin: 1rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid vars.$color-oscuro;
+            background-color: vars.$color-principal;
+            color: vars.$color-letra;
+            width: 25rem;
+            height: 20rem;
+        }
+    }
+}
+
+.contacto__direccion {
+    background-color: vars.$color-secundario;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+
+    &__telefono {
+        margin: 1rem;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            display: inline-block;
+        }
+    }
+
+    &__redes {
+        margin: 1rem;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    &__mapa {
+        margin: 1rem;
+        width: auto;
+        overflow: hidden;
+    }
+}
