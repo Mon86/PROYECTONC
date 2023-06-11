@@ -4,15 +4,19 @@
     padding: 2rem;
     text-align: justify;
     text-indent: 2rem;
+
+        h2 {
+        display: inline-block;
+        text-indent: 0;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid vars.$color-letra;
+        margin-top: 8rem;
+    }
 }
 
 .servicios__acordeon {
     background-color: vars.$color-principal;
     padding: 2rem 0 2rem 0;
-    h2 {
-        padding-bottom: 1rem;
-        border-bottom: 2px solid vars.$color-letra;
-    }
 }
 
 .accordion-item {
@@ -29,31 +33,13 @@
 
         &:focus {
             background-color: vars.$color-principal;
-            border: none;
+            outline: 0;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             color: vars.$color-letra;
         }
 
         &:active {
             background-color: vars.$color-principal;
-            border: none;
-            color: vars.$color-letra;
-        }
-
-        &:visited {
-            background-color: vars.$color-principal;
-            border: none;
-            color: vars.$color-letra;
-        }
-
-        &:link {
-            background-color: vars.$color-principal;
-            border: none;
-            color: vars.$color-letra;
-        }
-
-        &:hover {
-            background-color: vars.$color-principal;
-            border: none;
             color: vars.$color-letra;
         }
     }
@@ -61,7 +47,6 @@
 
 .accordion-button:not(.collapsed) {
     background-color: vars.$color-principal;
-    border: none;
     color: vars.$color-letra;
 }
 

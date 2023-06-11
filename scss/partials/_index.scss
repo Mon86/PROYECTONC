@@ -1,9 +1,6 @@
 @use './vars';
 
 .index {
-    section {
-        padding: 2rem;
-    }
     p {
         text-indent: 2rem;
         text-align: justify;
@@ -12,7 +9,9 @@
 
 .index__quienesSomos {
     width: 100%;
+    padding: 10rem 15rem 10rem 15rem;
     background-color: vars.$color-secundario;
+    font-weight: bold;
 }
 
 .index__card {
@@ -78,6 +77,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 8rem;
 }
 
 .carousel {
@@ -90,10 +90,20 @@
     border-radius: 0.5rem;
 }
 
+.carousel-control-prev {
+        transform: translateX(-40px);
+}
+
+.carousel-control-next {
+        transform: translateX(40px);
+}
+
 .index__servicios__radio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
     div {
         margin: 1rem;
         padding: 1rem;
@@ -110,6 +120,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: vars.$color-amarillo-c;
+    padding: 8rem;
+
+    h2 {
+        text-align: left;
+    }
 
     &__testimonio {
         display: flex;
@@ -131,6 +147,7 @@
     }
 
     &__newsletter {
+        padding: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -139,9 +156,10 @@
         input {
             background-color: vars.$color-principal;
             border: none;
-            border-radius: 0.5rem;
+            border-radius: 1rem;
             padding: 0.5rem;
             font-size: 2rem;
+            width:60rem;
         }
     }
 }

@@ -1,8 +1,11 @@
 @use './vars';
 
 .header {
-    background-color: vars.$color-principal;
-    margin-bottom: 1rem;
+    background-color: vars.$color-amarillo-o;
+}
+
+.navbar {
+    border-bottom: solid 2px vars.$color-letra;
 }
 
 .navbar__logo {
@@ -23,21 +26,36 @@
 .nav-item {
     text-align: center;
     width: fit-content;
+    font-weight: bolder;
 
     .active {
         border-bottom: solid 5px vars.$color-letra;
     }
 }
 
+.nav-link {
+    color: vars.$color-letra;
+
+    &:hover {
+        color: vars.$color-letra;
+    }
+}
+
 .header__banner {
+    background-color: vars.$color-principal;
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 5rem;
+
+    h1 {
+        font-size: 8rem;
+    }
 
     p {
-        font-size: 1.5rem;
+        font-size: 3rem;
         text-align: center;
-        font-weight: bold;
+        font-weight: bolder;
         margin: 1rem;
     }
 }

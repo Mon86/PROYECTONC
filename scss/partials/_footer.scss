@@ -1,12 +1,13 @@
 @use './vars';
 
 .footer {
-    background-color: vars.$color-principal;
-    margin-top: 1rem;
+    background-color: vars.$color-amarillo-o;
+    margin-top: 4rem;
     padding: 1rem;
 
     p {
         font-size: 1.5rem;
+        font-weight: bold;
     }
 }
 

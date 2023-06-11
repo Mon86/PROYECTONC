@@ -1,5 +1,9 @@
 @use './vars';
 
+.contacto {
+    padding-top: 4rem;
+}
+
 .contacto__formulario {
     background-color: vars.$color-secundario;
     padding: 1rem;
@@ -14,29 +18,42 @@
             margin: 1rem;
             padding: 0.5rem;
             border-radius: 0.5rem;
-            border: 1px solid vars.$color-oscuro;
+            border: none;
             background-color: vars.$color-principal;
             color: vars.$color-letra;
+
+            &:focus {
+                outline: none;
+            } 
         }
 
         select {
             margin: 1rem;
             padding: 0.5rem;
             border-radius: 0.5rem;
-            border: 1px solid vars.$color-oscuro;
+            border: none;
             background-color: vars.$color-principal;
             color: vars.$color-letra;
+
+            &:focus {
+                outline: none;
+            } 
         }
 
         textarea {
             margin: 1rem;
             padding: 0.5rem;
             border-radius: 0.5rem;
-            border: 1px solid vars.$color-oscuro;
+            border: none;
             background-color: vars.$color-principal;
             color: vars.$color-letra;
             width: 25rem;
             height: 20rem;
+            resize: none;
+            
+            &:focus {
+                outline: none;
+            } 
         }
     }
 }
